@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Searches page</title>
+    <link rel="stylesheet" href="../styles/base.css">
+</head>
+
+<body>
+    <header>
+        <%- include('../../layout/header') %>
+        <h1 class="headerText">Search Results</h1>
+    </header>
+
+
+       
+       <div class="booksContainer">
+        
+        <% books.forEach( (book,ind)=> { %>
+            <form id=<%= ind %> method="post" action="/postBookData">
+                <div  >
+                    <img    src= <%= book.url %>  />
+                    <input type="hidden" name="url" value="<%= book.url %>">
+                    <h3 > <%= book.title %> </h3>
+                    <input type="hidden" name="title" value="<%= book.title %>">
+                    <h4><%= book.author %></h4>
+                    <input type="hidden" name="author" value="<%= book.author %>">
+                    <p> <%= book.isbn %> </p>
+                    <input type="hidden" name="isbn" value="<%= book.isbn %>">
+                    <input type="hidden" name="description" value="<%= book.description %>">
+                    <button class="addBook" >Add to my bookshelf</button>
+                </div>
+            </form>
+            
+            
+       <% }) %>
+       
+           
+          
+       </div>
+        
+    </div>
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/d24b63793e.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

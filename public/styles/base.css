@@ -1,0 +1,251 @@
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#9b999b;
+}
+#burger{
+  cursor: pointer;
+}
+.line {
+  width: 22px;
+  margin-bottom: 5px;
+  height: 2px;
+  background-color: white;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+h1{
+  font-size: 2em;
+}
+header{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+header h1.headerText{
+  background-color: #464446;
+  width: 100%;
+  color:whitesmoke;
+  text-align: center;
+  padding:10px;
+  font-size: 1.5em;
+ 
+}
+.optionsContainer{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
+  background-color: #1f1e1f;
+  color:whitesmoke;
+  line-height: 3em;
+  font-size: .8em;
+  
+}
+.hide{
+  display: none;
+}
+.optionsContainer a{
+ text-decoration: none;
+ color: whitesmoke;
+ cursor: pointer;
+  
+}
+
+
+li {
+ 
+  font-size: 2rem;
+  letter-spacing: 3px;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+form { 
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  background-color:#cecdce ;
+  align-items: center;
+  margin:20px auto;
+  padding:13px 25px;
+  font-size: 1.1em;
+
+}
+form div:nth-child(2){
+  margin-bottom: 0;
+}
+#title , #author{
+  margin-right: 67%;
+}
+
+form input.textInput{
+  background-color: white ;
+  display: block;
+  padding:15px;
+  width: 70%;
+  margin: auto;
+  font-size: 1.2em;
+ 
+  
+}
+
+.submitButton{
+  background-color: black;
+  color: white;
+  width: 70%;
+  padding:15px;
+  margin: auto;
+  outline: none;
+  font-size: 1.2em;
+}
+
+
+
+.booksContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+
+}
+.booksContainer div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:10px 20px;
+  margin: 20px auto;
+  width: 80%; 
+  background-color: #cecdce;
+  box-shadow: 1px 2px 3px 2px gray;
+  
+}
+.booksContainer div img{
+  width: 50%;
+  height: 200px;
+  margin: 25px auto;
+  margin-bottom: 20px;
+  border:2px solid #fffeff;
+  box-shadow: 1px 2px 3px 2px gray;
+  
+}
+.booksContainer h3{
+  font-size: 1.6em;
+  color: #fffeff;
+  text-shadow: 1px 2px 3px gray;
+  margin:10px auto;
+  text-align: center;
+}
+.booksContainer div p.desc{
+
+  width: 85%;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.booksContainer div p.isbn {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+.booksContainer h4{
+  font-style: italic;
+  text-shadow: 1px 2px 3px rgb(187, 181, 181);
+  margin-bottom: 15px;
+  
+}
+
+#myNav{
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  
+}
+button.addBook ,.blackButton{
+  background-color: black;
+  color: white;
+  width: 82%;
+  padding:12px;
+  margin: auto;
+  outline: none;
+  font-size: 1.1em;
+  margin:20px auto;
+  cursor: pointer;
+}
+.deleteForm{
+  width: 82%;
+  margin: auto;
+  padding:0;
+}
+.deleteForm .blackButton{
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding:12px;
+  margin: auto;
+  outline: none;
+  font-size: 1.1em;
+  margin:20px auto;
+  cursor: pointer;
+}
+#updateForm form{
+  background-color: #cecdce;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 1px 2px 3px 2px gray;
+
+}
+#updateForm form input{
+  width: 55%;
+  padding: 10px;
+  margin: 0 auto 20px;
+  
+
+}
+#updateForm form label{
+  width: 20%;
+  margin-right: 7px;
+  font-weight: bold;
+  margin: 0;
+}
+#lastButton{
+  width: 65%;
+  border-radius: 4px;
+  margin:0 auto 15px;
+}
+#updateForm{
+  margin: 50px auto;
+}
